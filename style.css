@@ -101,4 +101,5 @@
 #optionsSection {
     text-align: left;
     margin-left: calc(50vw - 150px);
+    margin-bottom: 10px;
 }

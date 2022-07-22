@@ -207,7 +207,9 @@ function userAction(tile, index) {
   let colIndex = get2Dfrom1D(index)[1];
   console.log(boardArray);
 
-  askPlayerToMove();
+  if (!isGameOver) {
+    askPlayerToMove();
+  }
 
   if (tile.innerHTML === "" && !isGameOver) {
     if (currentPlayer) {
