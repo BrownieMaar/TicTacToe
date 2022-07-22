@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body class="background">
+    <main>
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset" class="downControlButtons">Reset</button>
+            <button id="options" class="downControlButtons" >Options</button>
+        </section>
+        <section class="display hide" id="optionsSection">
+            <input type="checkbox" id="aiAgainstAI" onclick="getMenuOption('aiAi')"> AI vs AI mode
+            <br>
+            <input type="checkbox" id="isAgainstAI" onclick="getMenuOption(`ai`)"> Play against AI
+            <br>
+            <span id="isUnbeatable" class="hide">
+            <input type="checkbox" onclick="getMenuOption(`ui`)"> Try unbeatable AI mode
+            </span>
+        </section>
+    </main>
+</body>
+</html>

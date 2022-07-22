@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Eraser;
+    src: url(./fonts/eraser.dust.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Eraser;
+}
+
+.background {
+    background-image: url(https://wallpaperaccess.com/full/1390893.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100%;
+    padding-top: 1px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 2px solid white;
+    min-width: 96px;
+    min-height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor: pointer;
+    color: white;
+}
+
+.playerX {
+    color: whitesmoke;
+}
+
+.playerO {
+    color: whitesmoke;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+.downControlButtons {
+    background-color: #00000000;
+}
+
+.downControlButtons:hover {
+    text-decoration: underline;
+}
+
+#optionsSection {
+    text-align: left;
+    margin-left: calc(50vw - 150px);
+}
